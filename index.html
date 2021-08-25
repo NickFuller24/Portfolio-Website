@@ -1,50 +1,114 @@
 <html>
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&&display=swap" rel="stylesheet">
+    <title>Nick Fuller</title>
+    <link rel="icon"
+          href="./OtherImages/devLogo.png">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&&display=swap" 
+          rel="stylesheet">
     <link rel="stylesheet"
           href="./styles.css"/>
   </head>
+
   <body>
+    <header class="page">
+      <section class="leftSide" 
+               id="page1">
+        <div>
+          <h1>Hi, I'm <strong>Nick</strong>.</h1>
+          <h1>Front-End Devloper.</h1>
+        </div>
+      </section>
+      <section class="rightSide">
+        <nav>
+          <a class="navLink"
+             href="#page2">
+            About Me
+          </a>
+          <a class="navLink"
+             href="#page3">
+            My Work
+          </a>
+          <a class="navLink"
+             href="#footer">
+            Contact Me
+          </a>
+        </nav>
+        <img id="headerImage" 
+             src="OtherImages/Ambassador Pic Large-Circular.png"/>
+      </section>
+    </header>
+
     <div class="page">
-      <div class="leftSide" id="page1"></div>
+      <div class="leftSide" 
+           id="page2"></div>
       <div class="rightSide"></div>
     </div>
+
     <div class="page">
-      <div class="leftSide" id="page2"></div>
-      <div class="rightSide"></div>
-    </div>
-    <div class="page">
-      <div class="leftSide" id="page3"></div>
+      <div class="leftSide" 
+           id="page3"></div>
       <div class="rightSide"></div>
     </div>
   </body>
 
-  <footer>
+  <footer id="footer">
     <div class="footerRowWrapper">
-      <div>© 2021 Nick Fuller</div>
-      <div>contact@nickfuller.net</div>
+      <div>
+        © 2021 Nick Fuller
+      </div>
+      <a href="mailto:contact@nickfuller.net">
+        contact@nickfuller.net
+      </a>
     </div>
     <div class="footerRowWrapper">
       <div id="designAndRepoWrapper">
-        <div class="iconTextWrapper" id="designWrapper">
-          <p class="iconText">Design for this website</p>
-          <img src="./OtherImages/external link.png " class="icon"/>
+        <div class="iconTextWrapper"
+             id="designWrapper">
+          <a class="iconText" 
+             href="https://www.figma.com/file/BWmO9RsRuV8rvl6YRt9c4I/Portfolio-Website?node-id=0%3A1" 
+             target="_blank">
+            Design for this website
+          </a>
+          <img src="./OtherImages/external link.png " 
+               class="icon"/>
         </div>
         <div class="iconTextWrapper">
-          <p class="iconText">Repo for this webiste</p>
-          <img src="./OtherImages/external link.png " class="icon"/>
+          <a class="iconText"
+             href="https://github.com/NickFuller24/Portfolio-Website"
+             target="_blank">
+            Repo for this webiste
+          </a>
+          <img src="./OtherImages/external link.png " 
+               class="icon"/>
         </div>
       </div>
       <div class="footerColumnWrapper">
         <div id="socialLogosWrapper">
-          <img src="./Logos/githubLogo.png" class="socialLogo"/>
-          <img src="./Logos/linkedinLogo.png" class="socialLogo"/>
+          <a class="socialLink"
+             href="https://github.com/NickFuller24"
+             target="_blank">
+            <img src="./Logos/githubLogo.png"
+                 class="socialLogo"/>
+          </a>
+          <a class="socialLink"
+             href="https://www.linkedin.com/in/nick-fuller-88a984149/"
+             target="_blank">
+            <img src="./Logos/linkedinLogo.png"
+                 class="socialLogo"/>
+          </a>
         </div>
         <div class="iconTextWrapper">
-          <p class="iconText">Resume</p>
-          <img class="icon" src="./OtherImages/file.png"/>
+          <a class="iconText"
+             href="./Resume F21_PDF.pdf" download target="_blank">
+            Resume
+          </a>
+          <img class="icon" 
+               src="./OtherImages/file.png"/>
         </div>
       </div>
     </div>

@@ -9,9 +9,41 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-weight: 400;
+
+  /* Mess around with this to find a limit */
+  font-size: min(5vw, 100px);
+
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem 0 3rem;
+}
+
 footer {
   padding: 3rem;
   background-color: white;;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+a:hover {
+  /* add a cool hover effect! */
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+a:visited {
+  color: black;
 }
 
 .page {
@@ -47,7 +79,6 @@ footer {
 .iconText {
   display: inline;
   margin: 0 0.5rem 0 0;
-  font-weight: 700;
 }
 
 .iconTextWrapper {
@@ -59,6 +90,11 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.navLink {
+  /* mess around with numbers for limits */
+  font-size: min(max(1rem, 1.5vw), 2rem);
 }
 
 #designAndRepoWrapper {
@@ -81,6 +117,9 @@ footer {
 
 #page1 {
   background-color: #50ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #page2 {
@@ -90,3 +129,12 @@ footer {
 #page3 {
   background-image: linear-gradient(#50ffff50, white);
 }
+
+#headerImage {
+  height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+}
+
