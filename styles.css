@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,9 +14,24 @@ h1 {
   font-weight: 400;
 
   /* Mess around with this to find a limit */
-  font-size: min(5vw, 100px);
+  font-size: min(5vw, 72px);
 
   margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  /* Mess around with this to find a limit */
+  font-size: min(4vw, 3rem);
+  padding-left: 3vw;
+}
+
+h3 {
+  font-weight: 700;
+  /* Mess around with this to find a limit */
+  font-size: min(3vw, 2rem);
+  padding-left: 3vw;
+  margin-top: 3rem;
 }
 
 nav {
@@ -27,6 +43,22 @@ nav {
 footer {
   padding: 3rem;
   background-color: white;;
+}
+
+ul {
+  padding-left: 5vw;
+  padding-right: 3vw;
+}
+
+li {
+  font-size: min(2vw, 1.25rem);
+  margin-bottom: 1rem;
+}
+
+p {
+  padding-left: 4vw;
+  padding-right: 3vw;
+  font-size: min(2vw, 1.25rem);
 }
 
 a {
@@ -97,6 +129,10 @@ a:visited {
   font-size: min(max(1rem, 1.5vw), 2rem);
 }
 
+.programmingLogo {
+  width: min(80px, 10vw);
+}
+
 #designAndRepoWrapper {
   min-height: 100%;
   display: flex;
@@ -131,10 +167,41 @@ a:visited {
 }
 
 #headerImage {
-  height: 40%;
+  height: min(25vw,40%);
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25vh;
 }
 
+#skillsWrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+#logoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  row-gap: 5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  justify-items: center;
+}
+
+#matlabLogo {
+  height: min(80px, 8vw);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#skillsHeaderWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#skillsHeader {
+  padding: 0;
+  margin-top: 8rem;
+}
